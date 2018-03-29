@@ -51,7 +51,7 @@ public static String [] numRoman={"M","CM","D","CD","C","XC","L","XL","X","IX","
     public static boolean getValidate(String valor){
         try {
             int numero=Integer.parseInt(valor);
-            if(numero>1000){
+            if(numero<=1000 || numero>=1){
                 return true;
             }else
             return false;
